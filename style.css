@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+img[alt="picture"] {
+    width: 200px;      
+    height: auto;       
+    border-radius: 50%; 
+    border: 3px solid #9393FF; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;       
+}
+
+
+section img[alt="picture"] {
+    display: block;     
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+header {
+    background-color: #9393FF;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: white;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #C7C7FF;
+    border-radius: 5px;
+}
+
+
+main {
+    padding: 2rem;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #9393FF;
+    color: white;
+}
+
+audio, video {
+    margin: 1rem 0;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+figure {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+figure td img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+}
+
+
+embed {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #9393FF;
+    color: white;
+    margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    figure img {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav a {
+        padding: 0.5rem;
+        margin: 5px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
